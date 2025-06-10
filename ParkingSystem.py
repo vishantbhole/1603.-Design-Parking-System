@@ -24,3 +24,9 @@ class ParkingSystem(object):
             self.small -= 1
             return True
         return False
+if __name__ == "__main__":
+    obj = ParkingSystem(1, 1, 0)
+    print(obj.addCar(1))  # True
+    print(obj.addCar(2))  # True
+    print(obj.addCar(3))  # False
+    print(obj.addCar(1))  # False
